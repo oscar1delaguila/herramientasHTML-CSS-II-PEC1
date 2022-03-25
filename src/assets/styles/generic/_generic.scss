@@ -1,0 +1,50 @@
+
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+* Estilos genéricos que se aplicarán a todo el documento HTML.
+\*-----------------------------------------------------------------------------------------------------*/
+
+
+* {
+  box-sizing: border-box;
+}
+  
+
+/*-----------------------------------------------------------------------------------------------------*\
+* Estilos estructurales
+\*-----------------------------------------------------------------------------------------------------*/
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  @media (  max-width: $mqMinWidth ) {
+    display: block;
+  }
+}
+
+section aside {
+  flex: 25vw;
+  padding: 1vw;
+  background-color: azure;
+}
+
+
+section div {
+  flex: 75vw;
+}
+
+.container {
+  padding: 1vw;
+  text-align: left;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+
+.container div {
+  padding: 1rem;
+  background-color: azure;
+}
+
+

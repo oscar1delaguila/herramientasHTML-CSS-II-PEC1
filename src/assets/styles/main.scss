@@ -1,0 +1,43 @@
+/**
+ * Use this file to import partials.
+ * Do not include SCSS code in this file.
+ */
+
+
+
+/**
+ * Import npm dependencies
+ * see: https://v2.parceljs.org/features/module-resolution/
+ * see commented examples below
+ */
+// @import "some-node-module";
+// @import "@some-company/some-node-module";
+ 
+@import "npm:@fortawesome/fontawesome-free/css/all.css";
+
+
+/**
+ * Import layers (metodology ITCSS)
+ * It's a best practice to use a different partial for each page
+ */
+
+@import "settings/settings";
+
+@import "generic/generic";
+
+@import "elements/elements";
+
+@import "objects/objects";
+
+@import "components/menu-component";
+@import "components/datos-personales-component";
+@import "components/estudios-academicos-component";
+@import "components/idiomas-component";
+@import "components/experiencia-component";
+
+@import "utilities/utilities";
+
+
+/**
+ * Do NOT include anything else in this file!
+ */

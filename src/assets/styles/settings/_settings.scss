@@ -1,0 +1,28 @@
+
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+*  Declaración de colores, fuentes y funciones sass que se utilizan
+\*-----------------------------------------------------------------------------------------------------*/
+
+
+@use "sass:color";
+
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$cv-detail-color: #000078;
+$font-color: #283747 ;
+$cv-background-color: #73edff;
+
+$cv-bg: color.scale($cv-background-color, $lightness: 70%);
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+*  Variable que indica un punto de interrupción de estilos que permite que la web sea responsive.
+\*-----------------------------------------------------------------------------------------------------*/
+
+
+$mqMinWidth: 500px;

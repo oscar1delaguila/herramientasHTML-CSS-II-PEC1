@@ -1,0 +1,35 @@
+
+/*-----------------------------------------------------------------------------------------------------*\
+* Header, Footer
+\*-----------------------------------------------------------------------------------------------------*/
+
+header, footer {
+  padding: 3rem;
+  font-size: 2rem;
+  color: #fff;
+  text-align: center;
+  background-color:cadetblue;
+  @media (  max-width: $mqMinWidth) {
+    padding: 5vw;
+    font-size: 1rem;
+  }
+}
+
+  
+/*-----------------------------------------------------------------------------------------------------*\
+* Body
+\*-----------------------------------------------------------------------------------------------------*/
+
+  
+body {
+  padding: 0 1vw;
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: $font-color;
+  background-color: $cv-bg;
+  
+}
+  
+  

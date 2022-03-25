@@ -1,0 +1,24 @@
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+* Sección de menú de la parte izquierda de la página
+\*-----------------------------------------------------------------------------------------------------*/
+
+ 
+aside div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: pointer;
+  
+  div  {
+    flex: 75%;
+    width: 100%;
+    padding: 2vh 0.5vh ;
+  }
+
+  p {
+    flex: 25%;
+  }
+}
+

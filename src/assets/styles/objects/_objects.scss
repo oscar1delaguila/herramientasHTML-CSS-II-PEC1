@@ -1,0 +1,25 @@
+
+/*-----------------------------------------------------------------------------------------------------*\
+*  Objeto 
+\*-----------------------------------------------------------------------------------------------------*/
+
+
+.o-triangle-right {
+  width: 0;
+  height: 0;
+  border-top: 2.5vh solid transparent;
+  border-bottom: 2.5vh solid transparent;
+  border-left: 5vh solid darkblue;
+}
+
+.o-option-menu-aside {
+  font-family: $font-family-serif;
+  font-size: 2.5vh;
+  border-bottom: 1px solid black;
+  @media (  max-width: $mqMinWidth) {
+    flex: 1 45%;
+    margin: 5px;
+    font-size: 4.5vw;
+    border: 1px solid darkblue;
+  }
+}

@@ -1,0 +1,39 @@
+
+/*-----------------------------------------------------------------------------------------------------*\
+*  Sección de estudios académicos
+\*-----------------------------------------------------------------------------------------------------*/
+
+@mixin percentageColumnValue($percentage: 88%) {
+  
+  display: inline-block;
+  width: $percentage;
+  height: 9vh;
+  margin: 1vw 1vw 1vw 0;
+  color: #fff;
+  text-align: center;
+  background-color: $cv-detail-color;
+  
+}
+
+.c-estudios {
+  width: 80%;  
+  border-left: 2px solid royalblue;
+  
+
+  .c-estudios__columna-front {
+    @include percentageColumnValue;
+  }
+  
+  .c-estudios__columna-back {
+    @include percentageColumnValue($percentage: 75%);
+  }
+  
+  .c-estudios__columna-otros {
+    @include percentageColumnValue($percentage: 66%);
+  }
+  
+  p {
+      display: inline; 
+  }
+}
+

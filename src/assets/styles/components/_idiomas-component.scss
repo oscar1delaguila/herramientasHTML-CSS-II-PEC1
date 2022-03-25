@@ -1,0 +1,43 @@
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+*  Sección de Idiomas
+\*-----------------------------------------------------------------------------------------------------*/
+
+@mixin colorHat($colorHat: $cv-detail-color) {
+  font-size: 3vw;
+  color: $colorHat;
+  @media (  max-width: $mqMinWidth) {
+    font-size: 9vw;
+  }
+}
+
+
+.c-idiomas {
+  display: grid;
+  grid-template-columns:repeat(6, 5vw );
+  row-gap: 1vh;
+  column-gap: 0.1vw;
+  justify-items: right;
+  padding: 1rem 0;
+  @media (  max-width: $mqMinWidth) {
+    grid-template-columns:repeat(6, 1fr );  
+  }
+
+  .c-idiomas__tag {
+    font-size: 1vw;
+    font-weight: 100;
+    color: $font-color;
+    @media (  max-width: $mqMinWidth) {
+      font-size: 2.5vh;
+    }
+  }
+  
+  .c-idiomas__puntuacion-positiva {
+    @include colorHat;
+  }
+  
+  .c-idiomas__puntuacion-neg {
+    @include colorHat($colorHat: grey )
+  }
+}

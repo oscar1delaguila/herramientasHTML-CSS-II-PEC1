@@ -1,0 +1,29 @@
+
+
+/*-----------------------------------------------------------------------------------------------------*\
+*  Sección de datos personales del CV
+\*-----------------------------------------------------------------------------------------------------*/
+
+.c-datos-personales {
+  display: flex;
+  @media (  max-width: $mqMinWidth) {
+    display: block;
+  }
+
+  figure {
+    flex: 40vw;
+    order: 1;
+   
+  }
+
+  div {
+    flex: 60vw;
+    order: 0;
+    background-color: azure;
+  }
+
+  .o-foto__datos-personales {
+    display: block;
+    width: 100%;
+  }
+}
