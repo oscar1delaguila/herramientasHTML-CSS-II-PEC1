@@ -12,6 +12,9 @@
 
 +( function() {
 
+
+//function setEventListenersCallbacks () {
+
   
   const idIdiomas  = document.getElementById("idiomas");
   idIdiomas.addEventListener('click', hasDisplayContainer);
@@ -36,6 +39,8 @@
 
 
 } )();
+
+//}
 
 function changeColor(menuTargetOption) {
 
@@ -105,3 +110,6 @@ function hasDisplayContainer(event) {
   changeColor(event.target.parentElement);
 
 }
+
+
+//setEventListenersCallbacks();
